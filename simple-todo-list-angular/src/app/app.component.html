@@ -1,0 +1,18 @@
+<html>
+<header>
+  <h1>Simple ToDo List - Learning Angular</h1>
+</header>
+<main>
+  <input [(ngModel)]="tarefa" type="text">
+  <button (click)="adicionar()">Adicionar</button>
+
+  <ul>
+    <li *ngFor="let tarefa of tarefas">
+      {{ tarefa }}
+      <fa-icon [icon]="faTrashAlt"></fa-icon>
+    </li>
+  </ul>
+
+</main>
+
+</html>
